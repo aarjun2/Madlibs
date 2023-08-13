@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mad libs </title>
+    <style>
+        * {
+            background-color: rgb(176, 230, 176);
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .c_1 {
+            text-align: center;
+            border: 2px solid;
+            margin: 10px;
+            padding: 20px;
+            width: 350px;
+            box-shadow: 0px 2.5px blue;
+        }
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        input {
+            text-align: center;
+            margin: 5px;
+            background-color: white;
+        }
+        button {
+            background-color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1> Mad Libs </h1>
+        <div class="c_1">
+            <label> Person Name: </label>
+            <input type="text" id="1"> <br>
+            <label> Character: </label> 
+            <input type="text" id="2"> <br>
+            <label> Adverb: </label>
+            <input type="text" id="3"> <br>
+            <label> Adjective: </label>
+            <input type="text" id="4"> <br>
+            <br>
+            <button id="t"> Tell Story </button>
+        </div>
+        <div class="c_1">
+            <h1> Wendy's Crazy Madlibs Story </h1> 
+            <p id="p"> One Day, my friend Superman was visiting New York and ran into Batman,
+                Superman ran quickly to meet Batman. But Batman turned out to be very
+                mean and Superman did not enjoy the meeting
+            </p>
+        </div>
+    </div>
+    <script src="Madlibs.js"></script>
+</body>
+</html>
